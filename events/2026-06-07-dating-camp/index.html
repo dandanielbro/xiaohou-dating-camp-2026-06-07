@@ -18,7 +18,7 @@
       <div class="meta-grid">
         <span class="meta-chip">主講：小侯</span>
         <span class="meta-chip">長度：第一段 24:30；第二段 35:24</span>
-        <span class="meta-chip">狀態：兩段皆已本機轉錄；第二段已更新為真正音檔</span>
+        <span class="meta-chip">狀態：兩段皆已本機轉錄；逐字稿頁已加推定發言人與連續段落合併</span>
       </div>
       <div class="hero-actions">
         <a class="button primary" href="../../transcripts/2026-06-07-dating-camp/">查看完整逐字稿</a>
@@ -50,7 +50,7 @@
   <main class="shell page-grid">
     <aside class="side-note">
       <h2>整理策略</h2>
-      <p>本頁依本機 Whisper large-v3-turbo 轉錄結果整理。正文保留原始順序與口語感，刪除大量重複、雜訊與明顯辨識錯詞；講者標示採保守策略，未做強制姓名歸因。</p>
+      <p>本頁依本機 Whisper large-v3-turbo 轉錄結果整理。正文保留原始順序與口語感，刪除大量重複、雜訊與明顯辨識錯詞；逐字稿頁新增保守發言人推定與連續段落合併，未做模型級聲紋 diarization。</p>
     </aside>
     <section class="content-flow">
       <section class="panel">
@@ -481,7 +481,7 @@
         <h2>來源狀態</h2>
         <ul class="summary-list"><li>第一段：成功產出 TXT/SRT/JSON，已納入正文與完整時間軸。</li>
 <li>第二段：真正音檔長度為 35:24，已重新轉錄並納入正文；先前 03:18 錯檔輸出已被覆蓋。</li>
-<li>講者：未跑 Hugging Face diarization；因此完整逐字稿採時間軸呈現，整理版只在高信心處以小侯教練脈絡描述。</li></ul>
+<li>講者：本版以文字脈絡做保守發言人推定，並合併同一推定發言人的連續片段；尚未跑 Hugging Face / pyannote 聲紋 diarization。</li></ul>
       </section>
     </section>
   </main>

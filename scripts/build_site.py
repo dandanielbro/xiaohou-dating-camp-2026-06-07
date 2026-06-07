@@ -331,6 +331,106 @@ def paragraphize(turns: list[dict], max_chars: int = 180) -> list[str]:
     return paragraphs
 
 
+QUESTION_CUES = (
+    "嗎", "是不是", "對不對", "可不可以", "可以嗎", "有沒有", "要不要", "怎麼辦",
+    "怎麼樣", "為什麼", "什麼意思", "你覺得", "那如果", "如果說",
+)
+
+COACH_CUES = (
+    "我問你", "我跟你講", "我覺得", "我希望", "我會", "我先", "我來", "我看一下",
+    "你要", "你可以", "你們要", "你們可以", "你就", "所以", "好", "OK", "這個是",
+    "重點是", "接下來", "我們", "大家", "作業", "我相信",
+)
+
+STUDENT_CUES = (
+    "我想問", "我可以", "那我", "可是我", "但是我", "我的問題", "我現在",
+    "她是我", "他是我", "我覺得我", "我不知道", "我想說",
+)
+
+BACKCHANNELS = {
+    "嗯", "對", "好", "OK", "可以", "是", "不是", "沒有", "有", "喔", "啊", "對啊",
+    "好啊", "沒錯", "真的", "可以啊",
+}
+
+
+def is_question_like(text: str) -> bool:
+    return "?" in text or "？" in text or any(cue in text for cue in QUESTION_CUES)
+
+
+def has_recent_question(turns: list[dict], idx: int) -> bool:
+    for prev in turns[max(0, idx - 3):idx]:
+        if is_question_like(prev["text"]):
+            return True
+    return False
+
+
+def infer_speaker(turns: list[dict], idx: int, previous: str | None) -> str:
+    text = turns[idx]["text"]
+    compact = text.replace(" ", "")
+
+    if compact in BACKCHANNELS:
+        if has_recent_question(turns, idx):
+            return "現場回應（推定）"
+        return previous or "小侯（推定）"
+
+    if any(cue in compact for cue in STUDENT_CUES) and not any(cue in compact for cue in COACH_CUES):
+        return "學員（推定）"
+
+    if (
+        is_question_like(compact)
+        and len(compact) <= 42
+        and "我問你" not in compact
+        and not compact.startswith(("你", "你們"))
+        and any(cue in compact for cue in ("我想", "那我", "可是", "但是", "如果我", "可以問"))
+    ):
+        return "學員提問（推定）"
+
+    if len(compact) <= 10 and previous and previous != "小侯（推定）":
+        return previous
+
+    return "小侯（推定）"
+
+
+def speaker_class(speaker: str) -> str:
+    if speaker.startswith("小侯"):
+        return "speaker-coach"
+    if speaker.startswith("學員"):
+        return "speaker-student"
+    return "speaker-room"
+
+
+def merge_speaker_turns(turns: list[dict], max_chars: int = 900, merge_gap: float = 2.5) -> list[dict]:
+    inferred: list[dict] = []
+    previous: str | None = None
+    for idx, turn in enumerate(turns):
+        speaker = infer_speaker(turns, idx, previous)
+        previous = speaker
+        inferred.append({**turn, "speaker": speaker, "speakerClass": speaker_class(speaker)})
+
+    merged: list[dict] = []
+    for turn in inferred:
+        if not merged:
+            merged.append({**turn, "segmentCount": 1})
+            continue
+
+        last = merged[-1]
+        gap = float(turn["start"]) - float(last["end"])
+        combined_text = f"{last['text']} {turn['text']}".strip()
+        if (
+            turn["speaker"] == last["speaker"]
+            and gap <= merge_gap
+            and len(combined_text) <= max_chars
+        ):
+            last["end"] = turn["end"]
+            last["endTime"] = turn["endTime"]
+            last["text"] = combined_text
+            last["segmentCount"] = int(last["segmentCount"]) + 1
+        else:
+            merged.append({**turn, "segmentCount": 1})
+
+    return merged
+
+
 def load_turns(source_path: Path, part_key: str, part_label: str) -> list[dict]:
     raw = json.loads(source_path.read_text(encoding="utf-8"))
     turns = []
@@ -365,6 +465,7 @@ def build_data() -> dict:
         part_key = section.get("part", "part1")
         part_label = section.get("partLabel", "第一段")
         matched = [turn for turn in turn_pools[part_key] if section["start"] <= turn["start"] < section["end"]]
+        speaker_turns = merge_speaker_turns(matched)
         section_data.append(
             {
                 "id": section["id"],
@@ -379,24 +480,42 @@ def build_data() -> dict:
                 "highlights": section["highlights"],
                 "paragraphs": paragraphize(matched),
                 "turns": matched,
+                "speakerTurns": speaker_turns,
             }
         )
 
     return {
         "title": "2026-06-07 小侯脫單訓練營逐字稿網站",
         "subtitle": "從約會互動、生活圈擴張，到關係需求、邀請關心與名單追蹤的現場 coaching 整理。",
-        "contentNote": "本頁依本機 Whisper large-v3-turbo 轉錄結果整理。正文保留原始順序與口語感，刪除大量重複、雜訊與明顯辨識錯詞；講者標示採保守策略，未做強制姓名歸因。",
+        "contentNote": "本頁依本機 Whisper large-v3-turbo 轉錄結果整理。正文保留原始順序與口語感，刪除大量重複、雜訊與明顯辨識錯詞；逐字稿頁新增保守發言人推定與連續段落合併，未做模型級聲紋 diarization。",
         "meta": {
             "primarySpeaker": "小侯",
             "recordedAt": "2026-06-07",
             "duration": "第一段 24:30；第二段 35:24",
             "scope": "local-only",
-            "status": "兩段皆已本機轉錄；第二段已更新為真正音檔",
+            "status": "兩段皆已本機轉錄；逐字稿頁已加推定發言人與連續段落合併",
         },
+        "speakers": [
+            {
+                "id": "coach",
+                "name": "小侯（推定）",
+                "note": "依內容脈絡推定為主要教練發言，非聲紋 diarization。",
+            },
+            {
+                "id": "student",
+                "name": "學員 / 學員提問（推定）",
+                "note": "依提問、第一人稱分享與回應脈絡推定。",
+            },
+            {
+                "id": "room",
+                "name": "現場回應（推定）",
+                "note": "依短促回覆與前後問答脈絡推定。",
+            },
+        ],
         "sourceQuality": [
             "第一段：成功產出 TXT/SRT/JSON，已納入正文與完整時間軸。",
             "第二段：真正音檔長度為 35:24，已重新轉錄並納入正文；先前 03:18 錯檔輸出已被覆蓋。",
-            "講者：未跑 Hugging Face diarization；因此完整逐字稿採時間軸呈現，整理版只在高信心處以小侯教練脈絡描述。",
+            "講者：本版以文字脈絡做保守發言人推定，並合併同一推定發言人的連續片段；尚未跑 Hugging Face / pyannote 聲紋 diarization。",
         ],
         "summaryHighlights": [
             "互動的目的不是把每次聊天變成解題，而是創造一起討論、一起玩、一起做事的共同感。",
@@ -553,11 +672,13 @@ def render_transcript(data: dict) -> str:
     chapters = []
     for section in data["sections"]:
         rows = []
-        for turn_idx, turn in enumerate(section["turns"], start=1):
+        for turn_idx, turn in enumerate(section["speakerTurns"], start=1):
             turn_id = f't-{turn["part"]}-{int(turn["start"]):04d}-{turn_idx:03d}'
             rows.append(
-                f'<section class="transcript-row" id="{e(turn_id)}">'
-                f'<time>{e(turn["time"])}</time><p>{e(turn["text"])}</p></section>'
+                f'<section class="transcript-row {e(turn["speakerClass"])}" id="{e(turn_id)}">'
+                f'<time>{e(turn["time"])}</time>'
+                f'<strong class="speaker-label">{e(turn["speaker"])}</strong>'
+                f'<p>{e(turn["text"])}</p></section>'
             )
         chapters.append(
             f"""<article class="transcript-chapter" id="{e(section["id"])}">
@@ -587,7 +708,7 @@ def render_transcript(data: dict) -> str:
   <main class="shell transcript-page" id="top">
     <p class="eyebrow">Raw Timeline · 兩段錄音合併索引</p>
     <h1>小侯脫單訓練營完整逐字稿</h1>
-    <p class="lead">完整逐字稿依章節分段。每個章節右上角都可以切回同一章的重點整理。</p>
+    <p class="lead">完整逐字稿依章節分段，並加入推定發言人與連續段落合併。每個章節右上角都可以切回同一章的重點整理。</p>
     <div class="hero-actions">
       <a class="button primary" href="../../events/{EVENT_SLUG}/">查看重點整理</a>
     </div>
@@ -892,7 +1013,7 @@ h2 {
 .transcript-list { padding: 0 20px 10px; }
 .transcript-row {
   display: grid;
-  grid-template-columns: 128px minmax(0, 1fr);
+  grid-template-columns: 128px 124px minmax(0, 1fr);
   gap: 14px;
   padding: 12px 0;
   border-top: 1px solid var(--line);
@@ -903,6 +1024,13 @@ h2 {
   font-weight: 900;
   font-variant-numeric: tabular-nums;
 }
+.speaker-label {
+  color: var(--muted);
+  font-weight: 900;
+}
+.speaker-coach .speaker-label { color: var(--accent); }
+.speaker-student .speaker-label { color: var(--accent-2); }
+.speaker-room .speaker-label { color: var(--gold); }
 .transcript-row p { margin: 0; }
 
 .footer {
@@ -922,6 +1050,7 @@ h2 {
   .hero { padding-top: 44px; }
   .chapter-head, .transcript-chapter-head, .transcript-row { grid-template-columns: 1fr; }
   .transcript-chapter-head { display: grid; }
+  .transcript-row { gap: 4px; }
 }
 """
 
@@ -936,6 +1065,10 @@ SPLIT_README_MD = """# 2026-06-07 小侯脫單訓練營私有連結網站
 - `events/2026-06-07-dating-camp/`：重點整理頁
 - `transcripts/2026-06-07-dating-camp/`：完整逐字稿頁
 - `content/transcript.json`：網站資料來源
+
+## 發言人版本
+
+本版逐字稿頁使用文字脈絡做保守發言人推定，並把同一推定發言人的連續片段合併成較長段落，以減少 Whisper 原始小片段造成的閱讀碎裂。這不是聲紋 diarization；若要更精準版本，可在有 HF token 與 pyannote 模型授權後重跑 `scripts/transcribe_with_speakers.sh`。
 
 ## 搜尋收錄策略
 

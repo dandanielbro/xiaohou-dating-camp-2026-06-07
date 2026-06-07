@@ -268,7 +268,7 @@ h2 {
 .transcript-list { padding: 0 20px 10px; }
 .transcript-row {
   display: grid;
-  grid-template-columns: 128px minmax(0, 1fr);
+  grid-template-columns: 128px 124px minmax(0, 1fr);
   gap: 14px;
   padding: 12px 0;
   border-top: 1px solid var(--line);
@@ -279,6 +279,13 @@ h2 {
   font-weight: 900;
   font-variant-numeric: tabular-nums;
 }
+.speaker-label {
+  color: var(--muted);
+  font-weight: 900;
+}
+.speaker-coach .speaker-label { color: var(--accent); }
+.speaker-student .speaker-label { color: var(--accent-2); }
+.speaker-room .speaker-label { color: var(--gold); }
 .transcript-row p { margin: 0; }
 
 .footer {
@@ -298,4 +305,5 @@ h2 {
   .hero { padding-top: 44px; }
   .chapter-head, .transcript-chapter-head, .transcript-row { grid-template-columns: 1fr; }
   .transcript-chapter-head { display: grid; }
+  .transcript-row { gap: 4px; }
 }

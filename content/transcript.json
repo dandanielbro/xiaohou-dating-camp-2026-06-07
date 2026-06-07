@@ -1,18 +1,35 @@
 {
   "title": "2026-06-07 小侯脫單訓練營逐字稿網站",
   "subtitle": "從約會互動、生活圈擴張，到關係需求、邀請關心與名單追蹤的現場 coaching 整理。",
-  "contentNote": "本頁依本機 Whisper large-v3-turbo 轉錄結果整理。正文保留原始順序與口語感，刪除大量重複、雜訊與明顯辨識錯詞；講者標示採保守策略，未做強制姓名歸因。",
+  "contentNote": "本頁依本機 Whisper large-v3-turbo 轉錄結果整理。正文保留原始順序與口語感，刪除大量重複、雜訊與明顯辨識錯詞；逐字稿頁新增保守發言人推定與連續段落合併，未做模型級聲紋 diarization。",
   "meta": {
     "primarySpeaker": "小侯",
     "recordedAt": "2026-06-07",
     "duration": "第一段 24:30；第二段 35:24",
     "scope": "local-only",
-    "status": "兩段皆已本機轉錄；第二段已更新為真正音檔"
+    "status": "兩段皆已本機轉錄；逐字稿頁已加推定發言人與連續段落合併"
   },
+  "speakers": [
+    {
+      "id": "coach",
+      "name": "小侯（推定）",
+      "note": "依內容脈絡推定為主要教練發言，非聲紋 diarization。"
+    },
+    {
+      "id": "student",
+      "name": "學員 / 學員提問（推定）",
+      "note": "依提問、第一人稱分享與回應脈絡推定。"
+    },
+    {
+      "id": "room",
+      "name": "現場回應（推定）",
+      "note": "依短促回覆與前後問答脈絡推定。"
+    }
+  ],
   "sourceQuality": [
     "第一段：成功產出 TXT/SRT/JSON，已納入正文與完整時間軸。",
     "第二段：真正音檔長度為 35:24，已重新轉錄並納入正文；先前 03:18 錯檔輸出已被覆蓋。",
-    "講者：未跑 Hugging Face diarization；因此完整逐字稿採時間軸呈現，整理版只在高信心處以小侯教練脈絡描述。"
+    "講者：本版以文字脈絡做保守發言人推定，並合併同一推定發言人的連續片段；尚未跑 Hugging Face / pyannote 聲紋 diarization。"
   ],
   "summaryHighlights": [
     "互動的目的不是把每次聊天變成解題，而是創造一起討論、一起玩、一起做事的共同感。",
@@ -1336,6 +1353,125 @@
           "endTime": "03:08",
           "text": "但是可能不是前期會用到的"
         }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 5.67,
+          "end": 96.06,
+          "time": "第一段 00:05",
+          "partTime": "00:05",
+          "endTime": "01:36",
+          "text": "那是AI那個吧 AI那一支吧 劈開頭那個吧 但它那個AI我沒有用它去轉 很爛啊 轉得很爛 我是自己 自己tune了一個skill去轉的 嗯 對 比較符合我要 比較符合 所以這個是能夠讓你目前的互動好一點 對 好玩 就是你現在應該是認識的部分 OK 然後對方 就是兩個人互相有好感 好 但這個是最淺的 有話會有點聊 對 所以 持續的聊天 第一個讓聊天好玩嘛 所以用討論的方式來聊天 那第二個就是 不聊天的情況底下也讓互動好玩 所以就剛剛這個打鬧 OK 啊 嗯 一起 例如說一起打球一起運動 這些都是共謀 或者是遊戲化互動 對 一起做事情 對 在聊天上是 我們一起做事情 就討論一件事情 譬如說我們現在就是在討論 所以我們會覺得我們的互動很有意義嘛 對啊 OK 好 然後 然後 討論到變成就整個很嚴肅 然後氣氛感覺 這就是討論的目的啊 不是真的要討論出一件事情啊 像我們現在就是很嚴肅的嘛 因為我們是要解決問題",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 50
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 96.06,
+          "end": 112.05,
+          "time": "第一段 01:36",
+          "partTime": "01:36",
+          "endTime": "01:52",
+          "text": "可是我如果跟你說 欸我們 我們一起去搶銀行 你要做什麼 哈哈哈哈 發想 哈哈哈哈 早上班 拜託 對啊 OK 然後 嗯 反正上週這週 約會嘛 所以你這個應該 沒什麼問題",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 17
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 112.05,
+          "end": 115.34,
+          "time": "第一段 01:52",
+          "partTime": "01:52",
+          "endTime": "01:55",
+          "text": "就是有再跟我們分享就好 好 中秒上有記錄嗎",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 3
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 115.34,
+          "end": 120.63,
+          "time": "第一段 01:55",
+          "partTime": "01:55",
+          "endTime": "02:00",
+          "text": "有 上班有才來 好 因為我們現在有個問題 是現在人越來越多了 所以大家那個",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 6
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 120.63,
+          "end": 129.44,
+          "time": "第一段 02:00",
+          "partTime": "02:00",
+          "endTime": "02:09",
+          "text": "自己的記錄要寫清楚一點 我才能幫你們 OK 好 好 然後你下一步的話是 剛剛有記錄你下一步的嗎",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 7
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 129.44,
+          "end": 135.56,
+          "time": "第一段 02:09",
+          "partTime": "02:09",
+          "endTime": "02:15",
+          "text": "嗯 好 那我覺得是體驗 分享",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 4
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 135.56,
+          "end": 149.04,
+          "time": "第一段 02:15",
+          "partTime": "02:15",
+          "endTime": "02:29",
+          "text": "你有什麼體驗是可以跟他分享的 OK 就是像我剛剛講的那幾個 你有沒有遊戲可以跟他玩 或者是你有沒有 共謀 就是你有沒有東西可以跟他一起討論 從事 興趣的",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 9
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 149.04,
+          "end": 149.76,
+          "time": "第一段 02:29",
+          "partTime": "02:29",
+          "endTime": "02:29",
+          "text": "OK",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 1
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 149.76,
+          "end": 188.81,
+          "time": "第一段 02:29",
+          "partTime": "02:29",
+          "endTime": "03:08",
+          "text": "你想給他帶來什麼樣的體驗 那也不一定是你給他的 你們可以一起去創造 譬如說一起去上一個課 再一起去體驗一下 攀岩啊 一起去體驗陶土啊 諸如此類的 OK 來討論 對對對 OK 好 因為你準備這些東西 你接下來才可以創造東西給他 對 OK 都無聊 好 然後 所以這個一樣 進入團隊代辦 就是大家一起想 就是 一人丟一個就是能 能創造體驗的東西 idea 出來 對 剛才是一種 但是可能不是前期會用到的",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 30
+        }
       ]
     },
     {
@@ -2068,6 +2204,86 @@
           "partTime": "04:49",
           "endTime": "04:50",
           "text": "好好喔"
+        }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 196.17,
+          "end": 208.92,
+          "time": "第一段 03:16",
+          "partTime": "03:16",
+          "endTime": "03:28",
+          "text": "可以看嗎 可以拍 有沒有空 你可以幫我拿幾張被子過來嗎 創造體驗的東西嗎 就是把 創造體驗的東西",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 7
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 208.92,
+          "end": 225.58,
+          "time": "第一段 03:28",
+          "partTime": "03:28",
+          "endTime": "03:45",
+          "text": "對 對 對 對 能創造體驗什麼的事情 好 像我是 做菜嘛 然後調酒嘛 對",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 10
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 225.58,
+          "end": 270.25,
+          "time": "第一段 03:45",
+          "partTime": "03:45",
+          "endTime": "04:30",
+          "text": "但我的可能比較沒有參考價值 因為我的都太難 我都是帶回家做 呵呵 啊滑板啦 我很喜歡就是 跟女生玩滑板 因為我都放在車上 然後滑板又可以肢體接觸這樣 嗯 對 遊戲是不是跟 放在共有 音響 遊戲 嗯 遊戲是遊戲 但是他們是 這三個東西是可以全部合在一起的 例如說我今天跟你 就是例如說玩傳說 那一定會有輸贏啊 所以它裡面也會有挑戰啊 所以這三個是 類似 我只是把它具象的話 好 我們八點半要去吃那個 旁邊的麻辣火鍋 先把它餵 好然後 好 所以你的完整了嗎",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 33
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 270.25,
+          "end": 274.54,
+          "time": "第一段 04:30",
+          "partTime": "04:30",
+          "endTime": "04:34",
+          "text": "好 OK 你還有另外一個女生是 有見面嗎",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 4
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 274.54,
+          "end": 276.85,
+          "time": "第一段 04:34",
+          "partTime": "04:34",
+          "endTime": "04:36",
+          "text": "啊這個是比較沒Fu還是比較",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 1
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 276.85,
+          "end": 290.82,
+          "time": "第一段 04:36",
+          "partTime": "04:36",
+          "endTime": "04:50",
+          "text": "嗯 也等下還可以就對 比較沒Fu 好 好那就再說吧 但是你再吃這個 好是沒Fu 沒Fu的 一定不討論你 我們知道有Fu的 好 下一個是誰 先請 我啊 好好喔",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 15
         }
       ]
     },
@@ -4061,6 +4277,60 @@
           "endTime": "08:50",
           "text": "就是"
         }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 290.82,
+          "end": 454.97,
+          "time": "第一段 04:50",
+          "partTime": "04:50",
+          "endTime": "07:34",
+          "text": "有那麼多活動群 沒有一個心虛的怎麼辦 然後進來好像是 為了人 然後進來都沒有想到自己 可是我覺得你的活動群都翻得滿 感謝感謝 所以關鍵是 要有喜歡的人啊 對啊要有喜歡的人 我真的想有什麼 你自己不算嗎 基本上是坦白講 他回的頻率太低啊 基本上就是 要 就沒再回啊 所以我說 我延伸到一個下一個問題是說 這些人進來是 因為活動好玩 才進來是因為我這個人進來 我就不知道怎麼判斷 對 有時候好感嘛 他是 可是這個人很明顯啊 因為這個人本來是 森嚴棗的啊 所以他不會對你有興趣啊 應該是說 他第一時間不會是對你有興趣啊 嗯 好吧 那所以還是持續跟他聊就對了 其實你那個當下 你應該 要把他拉進生活圈的 我已經拉進來了啊 已經拉了 所以我就問他說 那你今天有要去 去那個圓山 看一下 都在聽嗎 都在聽嗎 蛤 你不是都已經 那時候看你們現動這個 喔不是 但是另外那個那個那個是 那個在東方神秘那個認識的琪琪 那小事情啦 那你就後面 後面就是在 我多了 你這個時候就是 第一個是 你知道你對這個人可能有興趣 但是 你先不要投入那麼多 就是在乎值 喔是好是理解 對然後 然後以團體的方式來邀請他 有啊有啊 然後 好 你這樣子的人 要有 三到五個 你的生活才會 你的你的 這個 脫單之旅才會是健康的 健康的喔 什麼叫不健康跟健康的 我這樣不太有 健康就是你看 你現在只有一個選項 然後這個選項又沒有 對你有明確的 好感 好感訊號 那你一旦 太代議 你就會 喔我我我我不會 我不會因為這樣內耗 我只是說 那你不內耗的話 就是但是成功機率也低啊 就是只有一個的話 對我沒有說成功率也低的感覺 對啊 但是這個是正常的 可是就是因為只有一個 只有一個你成功率一定是低 所以三到五個 你才會有機會 因為現在是蠻多女生問了說 你什麼時候活動 找他 我跟你講 只要是你沒有興趣 你都不要鳥他 不要鳥他 除非你很閒 對 但你大概 欸你最近是蠻閒的啊 但是 那個比例就是這樣 就是 只要是你沒興趣的 都是 我 像我是指揮訊息 我都不會跟他們聊天 OK 我其實是沒有跟任何女生聊天的 對 我 你只 只 跟你有興趣聊天的 對啊 幹 這",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 129
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 454.97,
+          "end": 489.02,
+          "time": "第一段 07:34",
+          "partTime": "07:34",
+          "endTime": "08:09",
+          "text": "他現在被鎖死了 沒有我一直以來都是這樣子 我看一下有沒有誰 因為不然他的IG就反 就追蹤人家 他就不搞這一套 他就只給人家追蹤 就是很chill 我跟你講 你看他IG 他只給人家追蹤 他 我不追蹤別人 他追蹤別人 要嘛是同事 要嘛是真的 他覺得就是 啊 我想一下 對啊 我沒有在跟任何人聊天啊 就是你找我 我會回你啊 但是我不會跟你就是 有太多友來的 我忘了 你看這個 這個 這個人色真的很屌啊",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 29
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 493.66,
+          "end": 499.23,
+          "time": "第一段 08:13",
+          "partTime": "08:13",
+          "endTime": "08:19",
+          "text": "對啊 那 那 那這樣 回到下一個 但是三到五個事 我還在持續找 就是 對啊 不然",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 10
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 499.87,
+          "end": 530.45,
+          "time": "第一段 08:19",
+          "partTime": "08:19",
+          "endTime": "08:50",
+          "text": "那我繼續加油 所以你現在 你現在 我跟你講 你現在突破 突破第一個難關的 就是 你終於靠自己的力量 找到一個了 雖然說這有點像是 聖眼的力量 好 但是 但是呢 所以 這等於是你現在 你現在 目前成功指標是什麼 翠上半活動嘛 對啊 所以就反覆做這件事情 看能不能吸引到更多人 好 好 好可以 但是你之前 這個就是 就是",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 28
+        }
       ]
     },
     {
@@ -5683,6 +5953,73 @@
           "endTime": "11:10",
           "text": "學長對不對"
         }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 530.45,
+          "end": 536.82,
+          "time": "第一段 08:50",
+          "partTime": "08:50",
+          "endTime": "08:56",
+          "text": "這個叫什麼 那個評估 就是你之前用了 很久的交友軟體 然後都沒有遇到很喜歡的 對不對",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 6
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 536.82,
+          "end": 537.16,
+          "time": "第一段 08:56",
+          "partTime": "08:56",
+          "endTime": "08:57",
+          "text": "對啊",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 1
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 537.16,
+          "end": 648.45,
+          "time": "第一段 08:57",
+          "partTime": "08:57",
+          "endTime": "10:48",
+          "text": "所以你乾脆不要用交友軟體 哦 沒太用啊 對 所以你就是接下來 有心力你就辦活動 辦活動 然後生活圓 就這樣 然後就炸出一堆 莫名其他的活動 好 可以做 對啊 然後一機當下 OK 好 然後 那團隊可以 等一下 哦好 那下一個就是 哦更多活動 對啊 好 那團隊就是 呃 我先來想好 我來團交一個 好 大家可能 好 那這個就是 反正有些人能做 有些不能做 就是能 能跟他一起辦活動的 然後跟他 各想一個這樣 其實你們也可以做 那我覺得 你們可以發起來 我一定在還麻吉群的 對 例如說 例如說 欸你有什麼 你有什麼 或者 我的模式也可以拷貝啊 就是 我覺得就是 活動學出來 哦 你的專長是什麼 工程師 沒關係 你可以站在那些口啊 要 對啊 拜扣病 工作團 對啊 對啊 就是 就是 大家貢獻 你這樣 欸 技能 或是幹嘛 有啦 我確實有 然後去找他 OK 好 然後 反正現在劍庭是 辦活動最成功的人 所以就是 每個人都跟他辦一個活動 這樣子 好不好 每個人都跟他用吹 辦一個活動 那可以是什麼 五個人的 六個人的 也可以是 三十個人 大家管了 看你的目標設定 大概 好 然後 然後 這個月就要有 有那個 進度 OK 進度可以是 討論就好了 OK 或者是實踐 例如說 其實你就可以最快 跟他 有進度這樣 因為你也是 比較彈性的 對 OK 那個誰啊 那個 維洋不要做好了 維洋不用做 維洋是夜場 維洋的生活圈 也是很主力的 哦 那就不要 你的生活圈死了嘛 對不對 對不對 死人而已 你的生活圈已經沒在玩了 對不對 有啊有啊 還有是不是",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 129
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 648.45,
+          "end": 656.77,
+          "time": "第一段 10:48",
+          "partTime": "10:48",
+          "endTime": "10:56",
+          "text": "好 那那你也 你也不要做 不然你們會重疊 對 那就其他人可以 跟他做這件事情這樣 OK",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 8
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 656.77,
+          "end": 670.89,
+          "time": "第一段 10:56",
+          "partTime": "10:56",
+          "endTime": "11:10",
+          "text": "突然生活圈沒有生活圈嘛 你在我的 對 好 這樣子 好 你的比較簡單 你就是一樣持續 想到哪找到對象 好 謝謝 好 那我們準備去吃東西 學長對不對",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 14
+        }
       ]
     },
     {
@@ -6420,6 +6757,47 @@
           "partTime": "12:48",
           "endTime": "12:52",
           "text": "我"
+        }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 670.89,
+          "end": 722.21,
+          "time": "第一段 11:10",
+          "partTime": "11:10",
+          "endTime": "12:02",
+          "text": "學長 啊對 學長 對 等一下去吃東西 然後 你們兩個要寫的是這樣 那個 欸你怎麼知道要寫什麼 好 剛那張紙了 好在我手上 好 這邊是問題 QPNT 怎樣 我隨便 我剛剛亂創的 第一個就是可能 問題啊 挑戰啊 目標 然後接下來就是你做了什麼 這個是你自己先寫的 過去是你做了什麼 對 OK 基於這件事情啊 OK 然後 現在還是過去 就是 第一個是你現在的問題是什麼 或是你現在的目標 你現在的挑戰是什麼 混進之類的 然後基於這個東西 你往回寫嗎 現在正在做什麼 不是不是不是 這個是要基於前一題的 例如說他的問題是 我有個女生不知道該怎麼辦",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 43
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 722.21,
+          "end": 752.45,
+          "time": "第一段 12:02",
+          "partTime": "12:02",
+          "endTime": "12:32",
+          "text": "那我現在跟他的約會過程是什麼 然後他是 我有 他是 沒有有興趣的人 那我唯一遇到有興趣的人 是透過翠 就是把他 把問題寫出來 跟這個問題 前面經歷的事情 OK 然後 所以我們就會討論 我就會幫你們去想 下一步怎麼做 然後還有團隊之力 怎麼一起做這樣 OK 你們趕來看 QPNT而已 而且這個是我亂取的",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 22
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 752.45,
+          "end": 772.0,
+          "time": "第一段 12:32",
+          "partTime": "12:32",
+          "endTime": "12:52",
+          "text": "沒有 你現在洗牙等下要講 你們兩個等下我們吃火鍋的時候要講 好來我們聽那個仔細的 有一個問題是 有一個問題是 我",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 6
         }
       ]
     },
@@ -7676,6 +8054,112 @@
           "partTime": "15:19",
           "endTime": "15:21",
           "text": "算是完成的"
+        }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 772.0,
+          "end": 827.79,
+          "time": "第一段 12:52",
+          "partTime": "12:52",
+          "endTime": "13:47",
+          "text": "我 單獨跟 就是 他很care就是 我跟 異性之間出去 這件事情 嗯 然後 就是 這件事情蠻困擾我 是因為 因為 不論是工作 或者是 其他社交 我會覺得就是 就是 因為有時候 就是 認識人 這件事情 對我來說 他算蠻重要的 因為不見得就是說 我出去 跟 這個女生出去 是 非人一定要幹嘛幹嘛的 沒關係 我們不用講價值觀 那 那 你在這件事情上面 嘗試了什麼 那 這件事情我嘗試了就是 好 我這件事情又說 那 我 如果說 那 我這件事情 我跟女生這件事情出去 那 我 我跟他說 那我會 我 我跟他出去 我說一些什麼 我做一些什麼 嗯",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 55
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 827.79,
+          "end": 837.24,
+          "time": "第一段 13:47",
+          "partTime": "13:47",
+          "endTime": "13:57",
+          "text": "那我跟他講嘛 那 你看 他能不能有多安心嘛 然後再來就是 第二個就是 那 如果往後",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 8
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 837.24,
+          "end": 854.12,
+          "time": "第一段 13:57",
+          "partTime": "13:57",
+          "endTime": "14:14",
+          "text": "還有這樣的女生出現的話 那 就是把問題丟還給他 那他怎麼去 去想 這件事情 就是 因為 畢竟 不可能是說 一輩子都是 都不可能 不可能跟 女生單獨出去 這件事情",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 15
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 854.12,
+          "end": 870.43,
+          "time": "第一段 14:14",
+          "partTime": "14:14",
+          "endTime": "14:30",
+          "text": "我不知道 這個我也是未知的 但是 對我來說 現在目前就是 遇到這個狀況 那我就把時間拉長 那如果說往後 比如說 就算是可能合作的 對象還是什麼的 如果對方是女生 那 這件事情該怎麼辦呢",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 14
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 870.43,
+          "end": 877.31,
+          "time": "第一段 14:30",
+          "partTime": "14:30",
+          "endTime": "14:37",
+          "text": "就是我會把這個問題丟回 對方給他 然後他這個 他是跟我講說 就是 看是怎麼樣的人",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 6
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 877.31,
+          "end": 894.5,
+          "time": "第一段 14:37",
+          "partTime": "14:37",
+          "endTime": "14:54",
+          "text": "好 呃 你這個是 就事論事 所以這個會 解決不了問題 你要上升到 價值觀層面的部分 OK 所以第一個是 你為什麼 需要這些社交",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 12
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 897.53,
+          "end": 913.84,
+          "time": "第一段 14:57",
+          "partTime": "14:57",
+          "endTime": "15:13",
+          "text": "好 然後你需要呢 對方去滿足你的 這個東西 你說對方 為什麼要滿足我 對方怎麼滿足你 他媽 不想滿足 就是換一個 對不對",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 11
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 917.07,
+          "end": 921.79,
+          "time": "第一段 15:17",
+          "partTime": "15:17",
+          "endTime": "15:21",
+          "text": "對所以去跟他討論 算是完成的",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 2
         }
       ]
     },
@@ -9949,6 +10433,242 @@
           "endTime": "19:57",
           "text": "這個"
         }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 921.79,
+          "end": 925.18,
+          "time": "第一段 15:21",
+          "partTime": "15:21",
+          "endTime": "15:25",
+          "text": "對 所以不是 不是說 這件事情怎麼辦喔",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 4
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 925.18,
+          "end": 931.6,
+          "time": "第一段 15:25",
+          "partTime": "15:25",
+          "endTime": "15:31",
+          "text": "不是 只是說 好 現在有一個女生怎麼樣 有一個女生怎麼樣 這種 情境題了 而是說 好啦",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 9
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 931.6,
+          "end": 975.42,
+          "time": "第一段 15:31",
+          "partTime": "15:31",
+          "endTime": "16:15",
+          "text": "我現在 第一個是 因為我現在有 我現在有這個需求嘛 對不對 那 你根本去滿足我 然後 然後 所以可能就會開始出現 各種情境之類的 在 呃 就是在從裡面去推導出 這些 原則 但 但我現在還有一個問題是說 就是在這樣的前提之下 因為 我知道女生 有一些女生 她 就是女生還是會有 他們所謂的私術行為 但這個界線到底是 怎麼去拿呢 因為 這個就是就是 認識了 就是 我們只要先有這個 價值觀 OK 例如說好 我",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 36
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 975.42,
+          "end": 1007.08,
+          "time": "第一段 16:15",
+          "partTime": "16:15",
+          "endTime": "16:47",
+          "text": "第一個是我在不在乎你這件事情嗎 假如說今天 是這樣子好了 這個社交是一個 呃 我想一下喔 為什麼需要這個社交嗎 例如說他可能是娛樂 或者是呢 就娛樂是讓我開心的嘛 又或者是不這麼做會讓我覺得 很空虛 OK 這個感覺比較像是 基本的需求 OK 就不是娛樂了 好 那",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 19
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1007.08,
+          "end": 1010.78,
+          "time": "第一段 16:47",
+          "partTime": "16:47",
+          "endTime": "16:50",
+          "text": "那我對待這件事情的態度就會不一樣",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 1
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1010.78,
+          "end": 1012.55,
+          "time": "第一段 16:50",
+          "partTime": "16:50",
+          "endTime": "16:52",
+          "text": "例如說如果這個是你的娛樂",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 1
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1012.55,
+          "end": 1014.65,
+          "time": "第一段 16:52",
+          "partTime": "16:52",
+          "endTime": "16:54",
+          "text": "那我就會覺得 幹 那你都跟我交往了",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 3
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1014.65,
+          "end": 1016.44,
+          "time": "第一段 16:54",
+          "partTime": "16:54",
+          "endTime": "16:56",
+          "text": "你還幹嘛還去跟別人娛樂嗎",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 1
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1016.44,
+          "end": 1017.19,
+          "time": "第一段 16:56",
+          "partTime": "16:56",
+          "endTime": "16:57",
+          "text": "對",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 1
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1017.19,
+          "end": 1028.07,
+          "time": "第一段 16:57",
+          "partTime": "16:57",
+          "endTime": "17:08",
+          "text": "那如果是說這個是我的基本需求嘛 例如說 我這個人就是 需要社交能量啊 我就是一人啊 那你不這麼做我就會枯萎啊 對不對 那你要怎麼去配合嗎",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 8
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1028.07,
+          "end": 1032.23,
+          "time": "第一段 17:08",
+          "partTime": "17:08",
+          "endTime": "17:12",
+          "text": "OK 這個所以 這一題要先出來 然後",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 4
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1032.23,
+          "end": 1034.66,
+          "time": "第一段 17:12",
+          "partTime": "17:12",
+          "endTime": "17:14",
+          "text": "才知道後面怎麼去跟對方溝通",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 1
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1034.66,
+          "end": 1039.35,
+          "time": "第一段 17:14",
+          "partTime": "17:14",
+          "endTime": "17:19",
+          "text": "那我自己也覺得 就是我現在也 拿捏不清楚",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 3
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1039.35,
+          "end": 1069.01,
+          "time": "第一段 17:19",
+          "partTime": "17:19",
+          "endTime": "17:49",
+          "text": "就是你所謂的這邊的價值觀到底 就是社交對於我來講是 到底有沒有是 這個百分比的比重到底是多少 我自己也不太知道 他比較不會是百分比 而是你怎麼看待他 所以你為什麼 你說的這些社交是什麼社交 跟異性的社交 其實就好 那 我就講個更具體的就是 這個女生 就是 這女生 我我單獨 為什麼要跟 呃 現在的事情是 我一個宗教團體",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 21
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1069.01,
+          "end": 1080.28,
+          "time": "第一段 17:49",
+          "partTime": "17:49",
+          "endTime": "18:00",
+          "text": "那我本來就已經在 這裡面已經很恩念了 那 我是一個 就是我 突然要變成 身為一個 組長級的那個人物",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 8
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1080.28,
+          "end": 1186.08,
+          "time": "第一段 18:00",
+          "partTime": "18:00",
+          "endTime": "19:46",
+          "text": "然後也必須跟他跟他共識 那之後 那這個 這個共識的期間 有可能會必須要討論 所以說可能會約出來 這件事情 對 那 我的想法就只是 簡單就是 就是為 就是針對這件事情做討論 然後去 完成 就是 這個中小環境 所以你需要的也不是社交啊 你需要的是完成 就是你在某些地方的 前進任務嘛 對對對 OK 對 那但是 那 就這件事情就是 而且他有見過這女生 然後 就是 這女生他覺得就是 很不 OK 那 現在就覺得說 那 他就說 會 care 那 我 我只是 就是做 做完什麼樣的事情 這樣子 所以 呃 那 那 你就跟 啊好 我目前想法是這樣 就是你跟他說 你 你要的是什麼嗎 因為你要的是 把這件事情完成嗎 所以你要的也不是 其實也不是社交啊 然後 你要的也不是娛樂啊 你要的是某個任務完成 那你就問他這件事情該怎麼做吧 有 有 就是 所以說他後面說 就是 電話什麼聯絡那些就是 他 他一定會在意 就是 他也可能會想生氣這樣子 然後 他也有先表達這樣說 那 那如果說單獨出來這件事情的話 他就必須 得 陪一同 對 那 這個會讓我想到說 那 這個只是單純的任務 那 今天我都還沒講到社交 或者是 可能基本需求面的話 那 往後這件事情 該怎麼辦 這是一個很大的議題 我想想哦 所以這件事情有解決了嗎 呃",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 94
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1186.08,
+          "end": 1186.98,
+          "time": "第一段 19:46",
+          "partTime": "19:46",
+          "endTime": "19:46",
+          "text": "我現在",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 1
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1186.98,
+          "end": 1197.65,
+          "time": "第一段 19:46",
+          "partTime": "19:46",
+          "endTime": "19:57",
+          "text": "可以接受他陪一同這件事情 但是 會不會影響到 我 對於這件事情的想法是什麼 嗯 我想想哦 這個",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 8
+        }
       ]
     },
     {
@@ -11433,6 +12153,86 @@
           "endTime": "23:17",
           "text": "好吃飯"
         }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1200.54,
+          "end": 1229.89,
+          "time": "第一段 20:00",
+          "partTime": "20:00",
+          "endTime": "20:29",
+          "text": "我覺得是把把把你的需求 然後提給對方 讓對方來 想辦法 因為我感覺都是你受到 就是你有想做的事情 然後 你不能去做 然後 你不能做的之外 你還得到了挑戰 對 可是 可是這個是你的需求啊 為什麼是你在 就是 對呀 為什麼是你在面對問題 解決問題",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 19
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1229.89,
+          "end": 1236.91,
+          "time": "第一段 20:29",
+          "partTime": "20:29",
+          "endTime": "20:36",
+          "text": "對 所以說 我就把這東西就是 把這個問題就是丟手 丟換給他 因為我已經講說 我要的是什麼了 嗯",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 8
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1236.91,
+          "end": 1260.66,
+          "time": "第一段 20:36",
+          "partTime": "20:36",
+          "endTime": "21:00",
+          "text": "對那我就是把這個問題給丟換給他 看他怎麼去處理 所以說 說真的就是 也 因為這樣的東西 其實我講出來這東西 其實是蠻 其實 對我來說 是一個蠻 就是 那種心情是一個很 挑戰嘛 對 嗯 好 那我覺得",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 18
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1260.66,
+          "end": 1310.6,
+          "time": "第一段 21:00",
+          "partTime": "21:00",
+          "endTime": "21:50",
+          "text": "我覺得你接下來可以嘗試的是把你的 呃 例如說 我自己呢 是一個 就是比較不安全感的 男性 雖然大家可能不相信 但我沒有一個缺愛 所以呢 我都會有一個跟女朋友聊的話題 就是 嗯 例如說你做什麼事情會讓你覺得被愛 然後做什麼事情會讓你有安全感 然後以及相反的 就是不被愛跟不被安全感這樣 好 那我覺得你可以去 呃 跟他討論這些東西 但不一定是這個題目 OK 總之就是去 比方說 我的需求 我們有一些需求嘛 譬如說愛啊 安全感 OK 又或者是爽好了 那 在我們的關係裡面 你怎麼樣 攻擊我 或者是呢 我們怎麼樣會有造成傷害之類的",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 37
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1310.6,
+          "end": 1313.9,
+          "time": "第一段 21:50",
+          "partTime": "21:50",
+          "endTime": "21:53",
+          "text": "OK 然後你列三個 你覺得最重要的",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 3
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1313.9,
+          "end": 1397.1,
+          "time": "第一段 21:53",
+          "partTime": "21:53",
+          "endTime": "23:17",
+          "text": "你在關係中想得到的感受 好所以以我為舉例好了 我在關係中想得到的感受是 滿意的性 然後跟 呃 安 呃 安全感 想想還有什麼 呃 陪伴吧 我覺得是陪 陪伴 陪伴 陪伴 OK 好 那 性的話可能就是我覺得怎麼樣是有 就是例如說要常做嘛 然後用心做嘛 做到爽嘛 OK 然後可溝通嘛 那怎麼樣是沒有 例如說 呃 拒絕 拒絕討論嘛 然後或者是性冷感嘛 好 那安全感怎麼樣是有嘛 這個應該比較簡單的跳過 然後還有什麼 陪伴嘛 陪伴我可能就覺得要多久見面嘛 然後要主動討論什麼時候見面嘛 然後怎麼樣是沒有 就是不見面嘛 然後跟 不重視這件事情嘛 或者是懶得討論嘛 OK 好所以 寫下三個你的需求 然後 你覺得怎麼樣是有怎麼樣是沒有 然後 跟 去干對方聊 OK 好 那這個大家可以一起做 你們可以寫下自己的需求 然後跟你覺得怎麼樣是有怎麼樣是沒有 一個人寫 三個 你在關係中重視的需求 好吃飯",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 60
+        }
       ]
     },
     {
@@ -11898,6 +12698,47 @@
           "partTime": "24:29",
           "endTime": "24:29",
           "text": "我要抖"
+        }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1397.1,
+          "end": 1414.56,
+          "time": "第一段 23:17",
+          "partTime": "23:17",
+          "endTime": "23:34",
+          "text": "我講到手下了 我唱了 然後那個 各位你們有沒有辦法 我看一下你們紙的背面是什麼好不好 現在分化紀錄了 不知道可以的 這什麼分化紀錄 好 這個",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 10
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1414.56,
+          "end": 1455.84,
+          "time": "第一段 23:34",
+          "partTime": "23:34",
+          "endTime": "24:15",
+          "text": "我現在有兩個 選項 一個是呢 這個紙拍下來還給我 然後銷毀 另外一個就是呢 發誓這個紙呢 不要把它傳出去 分開吧 我覺得不要冒那些錢 好 那我們就大家都拍下來 然後 那個 像 寧可 寧可 直接當下 稍微不要被懷疑 這樣 去補 他 他還有在講話嗎",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 23
+        },
+        {
+          "part": "part1",
+          "partLabel": "第一段",
+          "start": 1455.84,
+          "end": 1469.8,
+          "time": "第一段 24:15",
+          "partTime": "24:15",
+          "endTime": "24:29",
+          "text": "有 沒關係 我們等下再討論他之前 他離開現場嗎 24分 我剛才給他 他說衝到家了 然後 那這就要去修吧 對啊 我要抖",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 11
         }
       ]
     },
@@ -13666,6 +14507,138 @@
           "partTime": "04:38",
           "endTime": "04:40",
           "text": "不錯欸"
+        }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 2.11,
+          "end": 89.92,
+          "time": "第二段 00:02",
+          "partTime": "00:02",
+          "endTime": "01:29",
+          "text": "別人看外型拍攝他拉他好,後來跟他聊感情 發現他感情怎樣?這個就可以接近了 對,聊感情的部分是注意到他有蠻多段,我之後有在跟他私聊 我有一個問題,你是怎麼接這個東西? 你是說感情這部分嗎? 比較像是我自己在IG上釋放出一些跟感情相關的議題訊號 然後他就會開始跟我聊 比方說,因為是我和他在IG上私聊的 對,對,對,那個 比如說我分享那個,怎樣,Nin的我們修圖後的照片 其實那時候還沒修圖,反正就是分享到那個IG上 然後我就開玩笑說,因為很多人都在問我說Nin是不是我女朋友 然後我就寫一段,同意回答,不是女友 然後他就跑來跟我聊女友的話題 對,所以就切入了 這個是在你們已經有在聊天? 呃,聊一點點,就是拍照的隔天嘛 然後他就開始跟我聊 拍照隔天你就發了 對 所以我這邊一直有",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 21
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 89.92,
+          "end": 100.05,
+          "time": "第二段 01:29",
+          "partTime": "01:29",
+          "endTime": "01:40",
+          "text": "我這邊有訊號說我可以聊感情的話題之類的 然後其他的像是 呃,我也分享一下",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 3
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 100.05,
+          "end": 157.15,
+          "time": "第二段 01:40",
+          "partTime": "01:40",
+          "endTime": "02:37",
+          "text": "我就應該在學什麼,他就跟我說他有在學類似的東西 然後我說,欸,好奇說你為什麼要學 哦,因為每次分手都要學一個愛心的東西 然後今天我就開始跟他聊一些感情的事情 然後注意到他就是 更新 就是分不合格的 次數蠻多的 然後就一次到,欸,好像蠻適合 抓在這裡 這樣 所以就把它丟在那個 學費總票上 其中一個就是 厭城 還有另一個是阿福 對 然後 之後 之後 比較像是 有在 稍微講一下 欸,這個 小猴這邊 有講座 然後 就開始 塗到台面上 在群裡面 現在已經變成一個梗 欸,你什麼時候講的 大概 因為我覺得蠻重要 你這樣嗎? 你是死了跟他講的講座是不是 對對對 就是",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 38
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 158.25,
+          "end": 193.51,
+          "time": "第二段 02:38",
+          "partTime": "02:38",
+          "endTime": "03:13",
+          "text": "嗯 就是說 你看這個 感情上如果有問題的話 可以問一下小猴 他小猴教練 這個教練就是情感教練 這樣 你看長座這樣 差不多這樣 等我介紹 嗯 等我介紹 他們想要多 我覺得 然後咧 然後 這是什麼時候的事情 大概 呃 五月 中 五月中 五月中 對啊,兩三多歲 對對對 但所以你也不是那種 你也沒有一直講 沒有沒有沒有",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 29
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 193.51,
+          "end": 231.71,
+          "time": "第二段 03:13",
+          "partTime": "03:13",
+          "endTime": "03:51",
+          "text": "那你中間還會跟他聊別的一些嗎 聊 聊別的事情嗎? 有啊 奇怪的東西都會攬來瞎賽這樣 幫他滿多的 親力 呃,對 畢竟他其實還蠻好當朋友 他是一個蠻好的 所以對嘛 是當朋友是 先搭生的嗎 對對對 旁邊才知道 對對對 那你怎麼有電話 我這邊 我覺得 今天是 我站在 就是 第一次碰面 那我覺得 他可能都有 因為 但我常付瓜 所以他可能也是都有一些 調整 那我剛好是跟他 他也知道說 欸 就是 跟他聊到說 最近",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 35
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 231.71,
+          "end": 254.58,
+          "time": "第二段 03:51",
+          "partTime": "03:51",
+          "endTime": "04:14",
+          "text": "他是我的信貸 幹嘛錢的 為了女生 付出很多 所以 讓他覺得說 喔 至少 我是跟他有 同的一些感情 那今天 結果後面滿順的 其實 可以 他現在 錢沒辦法做分歧 所以我就很明確 他是 願意去 讓自己去 這塊去學習",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 21
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 254.58,
+          "end": 256.54,
+          "time": "第二段 04:14",
+          "partTime": "04:14",
+          "endTime": "04:16",
+          "text": "但是他現在就有錢的問題",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 1
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 256.54,
+          "end": 264.08,
+          "time": "第二段 04:16",
+          "partTime": "04:16",
+          "endTime": "04:24",
+          "text": "那我現在 因為你今天才認識他 對 對 坦白講 所以今天 你解決他錢的問題 基本上他就是 就OK",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 9
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 264.08,
+          "end": 269.36,
+          "time": "第二段 04:24",
+          "partTime": "04:24",
+          "endTime": "04:29",
+          "text": "我覺得就直接打擾我腰海了 那這個其實算盛嚴的 對 但是",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 4
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 269.36,
+          "end": 280.47,
+          "time": "第二段 04:29",
+          "partTime": "04:29",
+          "endTime": "04:40",
+          "text": "我不知道 反正就是 那我坦白講 是我們整體 給他就是 對 安全 安全感是有的 不然他 大可 他可以說 他就不要跟我去了 不錯欸",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 13
         }
       ]
     },
@@ -16263,6 +17236,125 @@
           "partTime": "09:44",
           "endTime": "09:45",
           "text": "可能被我"
+        }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 280.47,
+          "end": 283.46,
+          "time": "第二段 04:40",
+          "partTime": "04:40",
+          "endTime": "04:43",
+          "text": "我覺得這個 農促運經營群組 也是一個",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 3
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 283.36,
+          "end": 345.61,
+          "time": "第二段 04:43",
+          "partTime": "04:43",
+          "endTime": "05:45",
+          "text": "我可以持續做的事情 因為如果 如果我厭城是阿福也是 的話 我就很容易被調 那我跟阿福比較 阿福其實也蠻可以的 那我就是 單親爸爸 他是單親爸爸 真的假的 我都不知道欸 因為我再去讀一下 Kevin嗎 Kevin 其實包也是單親爸爸 包是誰啊 是喔 帶回小孩 好屌喔 一個 多大 大概小學吧 包幾歲啊 非常年輕的時候就結婚 然後 非常久以前離婚 對 不知道我知不知道 那他幾歲 你可以去說 我可以再說 他幾歲 他幾歲 你說 包啊 包幾歲嗎 包 三十 三十幾 三十幾 三十 三十 他三十 我以為他三八之類的 確實阿 好啦",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 47
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 345.61,
+          "end": 376.42,
+          "time": "第二段 05:45",
+          "partTime": "05:45",
+          "endTime": "06:16",
+          "text": "Malcom今天應該是 皮膚百寸 看起來鮮 他皺紋 對他皺紋很眩 他眼角紋很眩 要打疫苗 就加油吧 不過 他的救援當然是不太快 生小孩 因為他是在港外待過 很久 對 好像沒有 可是他跟我說他回台灣沒什麼生活圈 類似 蛤 他在日本待過 對 那就是了 日本 不是也是滿寶實的 對 日本才 是喔 好嗎 日本就很寶",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 28
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 376.42,
+          "end": 393.04,
+          "time": "第二段 06:16",
+          "partTime": "06:16",
+          "endTime": "06:33",
+          "text": "好 呃 好像要純住 喔好 Kevin 欸那Kevin小孩呢 小孩也差不多大 大概就是 好像 快 國小高中高年級那個 我更大",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 12
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 393.04,
+          "end": 422.54,
+          "time": "第二段 06:33",
+          "partTime": "06:33",
+          "endTime": "07:02",
+          "text": "包括小孩也是差不多那個年級 那個年級 你說國小中高年級 喔天天高中 喔 很酷喔 所以我這裡是那個 男輕人 家庭 很棒 我也是男輕小孩 很棒 滿有趣 你怎麼會知道啊 就是那天在海邊撈出來 你知道我們這一碗撈超級他媽糗 很厲害 真言 真言在我身中的價值有提成 好不錯",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 20
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 422.54,
+          "end": 428.28,
+          "time": "第二段 07:02",
+          "partTime": "07:02",
+          "endTime": "07:08",
+          "text": "那我感覺是 好 然後那個 好 想到這個那個 我剛剛有跟那個",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 6
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 428.28,
+          "end": 480.36,
+          "time": "第二段 07:08",
+          "partTime": "07:08",
+          "endTime": "08:00",
+          "text": "Jacky有就是有分享說 提問啊就是說 要怎麼去 邀請別人 因為如果跟別人說 就是自己有 任務 目標的話 會讓別人不舒服 可能會怕別人不舒服這樣 然後 然後 建琴有分享建琴的做法嗎 建琴就是直接問嗎 咦 什麼 阿好那個 怎麼講 阿好我就直接 就是以朋友角度 關心他的 那個 感情狀態啊 然後我覺得說 如果需要幫忙 就是我 就是你可以來 反正我就問他說 你平常有 社交或 他有在看情感出 那你要不要就是 來這邊學習 就是台北的 反正你也常來台北 然後來聽個講座 阿好你個人認識多久啊 他在我前一位 一年前 那其實中間 聊的次數也不多 那只是在 那時候上班的時候 其實我們是不同公司",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 44
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 480.36,
+          "end": 487.36,
+          "time": "第二段 08:00",
+          "partTime": "08:00",
+          "endTime": "08:07",
+          "text": "但是我坐在他旁邊 所以就跟他聊一些 反正就是亂拉 反正 那時候剛上我UC 一二屆的狀態 你們不同公司",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 7
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 487.36,
+          "end": 585.93,
+          "time": "第二段 08:07",
+          "partTime": "08:07",
+          "endTime": "09:45",
+          "text": "但是我們就注點在那邊工作 等於說 就同個辦公室 在不同 不同公司的對 反正就聊 然後就 聊他感情故事 那時候上我一二屆就是 狀態很好 就跟他聊一些 我去 最近叫我狀態 所以他對我這個 滿 滿信賴 有一個印象的 然後 中間也沒什麼再聯絡 最近我也不知道 忘記什麼時候 有啦 在詞訊說 你現在還有在那公司嗎 就要偶爾聊一聊 然後 因為你知道 這個群組就是脫單群 所以想說 這件事要關心一下 然後這關心就 大當選 好 所以 這個是從 本來的朋友 然後分享 跟關心去 延伸的嗎 這個其實是 本來預期 希望大家做的事情 然後彥晨這個也是 彥晨這個 就不一樣 彥晨是新朋友 然後認識的 所以我希望大家是能夠 這兩件事情 都可以做 所以要嘛去關心你原本的朋友 要嘛就是認識新朋友 你也可以 了解他的感情狀況 關心這樣 好 一樣我覺得步調只是 進程比較快跟短而已啊 因為我是早期認識 他是 最近認識的 但是 人過程是一樣的 對我覺得過程是一樣的 就是 直接切入他的感情世界 而且 他看到你的生活 就是 比一般人不一樣 然後今天Joky會講這一點 是因為他說 他被聖言叫他來的時候 他就覺得他是那個賣面子來的 然後他當下也不想報名這樣 所以 我覺得是因為他 當初的體驗是這樣 所以他覺得 他如果要去找別人 他可能就會跟你一樣 造成別人的不愉快 然後 所以我想 我們這邊 我們就可以第一時間嘛 因為他後來也是 成功進來了 可能被我",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 89
         }
       ]
     },
@@ -19164,6 +20256,203 @@
           "endTime": "15:22",
           "text": "然後"
         }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 585.93,
+          "end": 599.98,
+          "time": "第二段 09:45",
+          "partTime": "09:45",
+          "endTime": "09:59",
+          "text": "被我 欸 我後來 他說他後來又跟你聊 就覺得可以 然後 然後我跟他聊 之類的 所以 這有點像是什麼 就是 你跟女生吵過架之後 又跟女生和好 你就可以問他 當初為什麼跟我吵架這樣",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 15
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 599.98,
+          "end": 619.51,
+          "time": "第二段 09:59",
+          "partTime": "09:59",
+          "endTime": "10:19",
+          "text": "OK 然後 然後我們就可以一起從 因為剛有聽到 兩個成功的 案例 但是可能 翻正面案例跟負面案例 算翻不負面案例嗎 反面案例 我們都學習一下這樣 好 Joky你覺得是 當初是哪部分 讓你覺得 就是 沒那麼",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 17
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 619.51,
+          "end": 620.51,
+          "time": "第二段 10:19",
+          "partTime": "10:19",
+          "endTime": "10:20",
+          "text": "我可以說嗎",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 1
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 620.51,
+          "end": 621.51,
+          "time": "第二段 10:20",
+          "partTime": "10:20",
+          "endTime": "10:21",
+          "text": "對 喔好",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 2
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 621.51,
+          "end": 688.49,
+          "time": "第二段 10:21",
+          "partTime": "10:21",
+          "endTime": "11:28",
+          "text": "HANK那種賣奧式的方式 蛤 什麼東西 HANK那種賣奧式 可是他就說 來的過程欸 來之前 他 找我的時候 就趕緊入電力也很強 對對對 那時候 等我一下 我剛剛掛不掉 你上次喝什麼 啤酒啊 OK 我應該一個小時內回家 拜拜 拜拜 那時候 那時候我就直接聊當 我說我加入一個 脫單群組 然後 我是要找人 來聽獎 之後做水費 所以是這樣子喝不舒服 還是怎麼樣 還是這邊也還好 我覺得別人可能會覺得不舒服 如果這樣可以別人講的話 對 你有沒有啊 我 你不要幫人家 預測講 那就是 那就是 那就是你 預測立場 那是 當下 還是過一下就沒關係 還是過幾個小時 還是過幾天 還是他講了什麼 你才覺得 當下 當下有一點反感 對 但是後來 當下是不是還強調 我這樣幹好像在做指教",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 55
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 688.49,
+          "end": 698.32,
+          "time": "第二段 11:28",
+          "partTime": "11:28",
+          "endTime": "11:38",
+          "text": "對 他自己有這樣講 然後覺得 對 所以我就覺得OK",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 5
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 698.32,
+          "end": 738.59,
+          "time": "第二段 11:38",
+          "partTime": "11:38",
+          "endTime": "12:18",
+          "text": "其實我覺得好像沒有什麼 是你自己覺得 對 後來放方向 好 所以就是運氣 對 對 那我覺得沒什麼 那你就說 其實我早晚來 我也沒有要賺點錢 我是覺得有幫助 就是 因為你現在是 你當下感受最深刻 所以你應該要釋放出 你來這邊 有什麼改變 是你的感受 對 那你也沒有要圖他 就是什麼佣金幹嘛 就直接 你來聽 你也沒什麼處置 四百塊你可以拿回去 對 但是我覺得說 就是 保證金是可以推的 沒有那個時候 他那時候沒有保證金 對 所以現在的保證金還是可以推的 對不對 對對對",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 37
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 738.59,
+          "end": 760.98,
+          "time": "第二段 12:18",
+          "partTime": "12:18",
+          "endTime": "12:40",
+          "text": "對 對啊 就用你的感受去 讓他來聽 那剩下的這邊 能不能成就這邊 得 得失了 嗯 好 我想想喔 其實我是 因為我之前也 反正 那個什麼身心靈課程 我都有上過嘛 嗯 然後 然後那個時候也有感染 然後",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 20
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 760.98,
+          "end": 764.07,
+          "time": "第二段 12:40",
+          "partTime": "12:40",
+          "endTime": "12:44",
+          "text": "反正那個目標都是三個人 然後有人可能可以救到更多之類的",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 2
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 764.07,
+          "end": 774.88,
+          "time": "第二段 12:44",
+          "partTime": "12:44",
+          "endTime": "12:54",
+          "text": "但是我 我根本不在乎幫他賺錢 就是要感染我就是 要找人 上課 我當然是找個UC嘛 所以那時候我也有 嘗試就是 就是 就是做這件事情",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 10
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 774.88,
+          "end": 843.77,
+          "time": "第二段 12:54",
+          "partTime": "12:54",
+          "endTime": "14:03",
+          "text": "就這樣那種奇怪聲聲音刻 他其實沒有奇怪 只是 有的人很奇怪而已 好 然後我其中 我那時候有 邀請三個人 上課這樣 大概要了可能五個六個吧 還有三個有報名 然後 然後 有一個是我盧來的 然後 有一個是我的好朋友 就是那種蠻好的 就是我直接跟他講 他就直接來聽 然後覺得不錯 他就問我要不要報 我就說當然要報 然後就報了 然後還有一個是UC的學院 是鐵粉吧 然後我叫他去 然後他很喜歡上課 然後他就直接報了 所以我覺得 這種職球是 是蠻OK的 只是可能 要把它當作是那種 好康分享 對 他可能是那種輕鬆的 低門看的 我跟你說這個好看 我覺得適合你這樣子 對 可是這個可能 我會太吸引人 也不用說什麼 一定要找到對方 就是 他一直困擾 某件 某個店之類的 好 這邊就是 如果沒有的話 你只是一個 就是有點像是 我跟你說 這個今天在特價 那那個人要不要買 你根本不知道",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 57
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 843.77,
+          "end": 896.68,
+          "time": "第二段 14:03",
+          "partTime": "14:03",
+          "endTime": "14:56",
+          "text": "對 除非這個特價真的超屌 或者是 你知道這個人真的要 對 所以我覺得 對 所以我覺得這個情境 是屬於偏 無效 就是 沒那麼有 有用的分享 但是 是不會有問題的 對 就是 對 正反面的影響就不大 就是 我跟你說這個不錯 看一下喔 就這樣子 對 沒有一定要這樣 對 你在邀請他的時候 你有跟他聊感情嗎 那段時間 確實在聊感情 就是聊那個 約 交友軟體 交友軟體那個 成功率啊 然後 嗯 那你聊這些之前 是 是已經有目標的嗎 沒有 是",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 42
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 896.68,
+          "end": 897.68,
+          "time": "第二段 14:56",
+          "partTime": "14:56",
+          "endTime": "14:57",
+          "text": "已經有接到我這個任務嗎",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 1
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 897.68,
+          "end": 898.74,
+          "time": "第二段 14:57",
+          "partTime": "14:57",
+          "endTime": "14:58",
+          "text": "沒有",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 1
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 898.74,
+          "end": 922.04,
+          "time": "第二段 14:58",
+          "partTime": "14:58",
+          "endTime": "15:22",
+          "text": "所以根本還不在群組裡面 就在聊 對 對 那時候 對 好 那我覺得 我想一下喔 我們不要 我們不要花那麼多時間講好了 所以一定是一定是 多關心 然後多分享 然後發現有 再推薦好了 我們就以這個為方向 發現什麼 它有需求喔 對 然後",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 21
+        }
       ]
     },
     {
@@ -21536,6 +22825,216 @@
           "partTime": "20:09",
           "endTime": "20:10",
           "text": "你覺得好"
+        }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 922.04,
+          "end": 943.43,
+          "time": "第二段 15:22",
+          "partTime": "15:22",
+          "endTime": "15:43",
+          "text": "我覺得這個琪琪可以學一個型態 就是多分享 你一定會覺得 就是跟人家講這個沒有什麼必要 對 那你不要一直 往下好不好 對 不要看起來 不開心 就是 就是 你現在開始有些嘗試嗎 或者你生活有些精彩的嗎 我覺得 要多跟別人分享",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 16
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 943.43,
+          "end": 965.09,
+          "time": "第二段 15:43",
+          "partTime": "15:43",
+          "endTime": "16:05",
+          "text": "OK 所以 你寫 社交 這個話很重要 你寫社交表 因為它會變成是 我們可以知道 你去這些社交 你有什麼收穫 那你同理 你可以把它變成是 你寫給別人看 我參加這個課程 或是我",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 15
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 965.09,
+          "end": 969.75,
+          "time": "第二段 16:05",
+          "partTime": "16:05",
+          "endTime": "16:09",
+          "text": "我現在的生活多麼精彩 你知道嗎 你說社交表",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 3
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 969.75,
+          "end": 983.17,
+          "time": "第二段 16:09",
+          "partTime": "16:09",
+          "endTime": "16:23",
+          "text": "對啊 對 你現在社交表是有寫 但是 你現在社交表就是 記錄的 蠻詳細的 那你試著把它變成故事 把它變成寫故事 這樣子",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 10
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 983.17,
+          "end": 991.63,
+          "time": "第二段 16:23",
+          "partTime": "16:23",
+          "endTime": "16:31",
+          "text": "就加入你的感受就是故事了 OK 那你現在的社交表可能會寫的偏負面 就是例如說 我去這個沒屁用啊 我去這個沒有沒有",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 6
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 991.63,
+          "end": 993.04,
+          "time": "第二段 16:31",
+          "partTime": "16:31",
+          "endTime": "16:33",
+          "text": "OK",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 1
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 993.04,
+          "end": 1032.32,
+          "time": "第二段 16:33",
+          "partTime": "16:33",
+          "endTime": "17:12",
+          "text": "那你可以把它變成正面的 就是我去這個 我學到什麼 我玩到什麼 OK 好 來 那我們來看一下實際的 今天聊超久 嗯 好 那就是希望大家就是 開始 邀請人過來嘛 找身邊的人 然後 聖眼跟艦艇我們就跳過 他們都有做過 就是希望你們再來找 可能一兩個人 好不好 我就愛死你們了 然後之後就隨緣 我們就在這個群組當好戰友 然後我們就不斷 繼續採用 我繼續再從 陌生太快玩一下 嗯 好 你寫了超多人齁 幹 跟你的約會一樣 OK",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 34
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1032.59,
+          "end": 1055.33,
+          "time": "第二段 17:12",
+          "partTime": "17:12",
+          "endTime": "17:35",
+          "text": "其實我不知道 應該說我之前一直卡在 我一定要找到一個 他 覺得就是幹他媽 我這個點卡的 好死人的狀態 你知道嗎 但你這些人 你都沒有去跟他聊 他的感情狀況啊 就是聊了 但他們可能就是說 我幹就是現在這樣啊 隨緣啊 什麼之類的 那你要問他 你有沒有做什麼事情啊 結果我就覺得說",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 19
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1055.33,
+          "end": 1069.71,
+          "time": "第二段 17:35",
+          "partTime": "17:35",
+          "endTime": "17:49",
+          "text": "啊 反正時間會解決一切啦 之類的 別說這種 不會啊幹 那你也不要來上課啊 那你也不要來上課啊 沒有啊 沒有啊 我覺得課長太多了 幹 上次問你也這樣講 沒有啊 因為之前就一直覺得 我一定要找到一個",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 15
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1069.71,
+          "end": 1077.96,
+          "time": "第二段 17:49",
+          "partTime": "17:49",
+          "endTime": "17:57",
+          "text": "好所以是你有一個想聊的話題 就是例如說 感情嘛 那感情之後 單身嘛 然後他可能會說",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 6
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1077.96,
+          "end": 1087.05,
+          "time": "第二段 17:57",
+          "partTime": "17:57",
+          "endTime": "18:07",
+          "text": "我現在沒想法 或是我 我也不知道要怎麼做 你就要開始拿 你知道的東西去問他 可以用交往軟體啊 你有用嗎 然後可以",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 8
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1087.05,
+          "end": 1093.09,
+          "time": "第二段 18:07",
+          "partTime": "18:07",
+          "endTime": "18:13",
+          "text": "可以 可以跟我出來玩啊 要不要 這樣子 哦",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 5
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1093.09,
+          "end": 1096.18,
+          "time": "第二段 18:13",
+          "partTime": "18:13",
+          "endTime": "18:16",
+          "text": "我可以帶你去認識女生啊 之類的啊 OK",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 3
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1096.18,
+          "end": 1150.08,
+          "time": "第二段 18:16",
+          "partTime": "18:16",
+          "endTime": "19:10",
+          "text": "就是挑你覺得你可以聊的主題嗎 或者是 就是在深挖他 那怎麼不積極一點 對 你就會知道他到底是怎麼想的了嗎 你都是卡在 最爛的那一步 就是沒做 全部都要換你想 趕快給他覺得不錯 做一半啊 做一半 對啊 你到底有做還沒做啊 有做 但是那時候就是 我覺得我挖不到 所以我就覺得 我找不到一個 可以叫他來的理由這樣 那你到底做了什麼啊 那就是你聊的不夠深啊 你聊的不夠深 你當然沒理由啊 那就是沒做啊 因為你聊的夠深 一定會有兩件事情 就是他需要 或他不需要 他需要你就 他如果不需要 你也不會覺得是 哦 我聊的不夠深 就是哦 我真的認識他夠多了 他好像真的 我幫不到他欸 或是他不需要 就是抓Jacky來參加我們這FC群啊 嗯 對對對 對啊",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 44
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1149.98,
+          "end": 1154.96,
+          "time": "第二段 19:09",
+          "partTime": "19:09",
+          "endTime": "19:14",
+          "text": "那我也會找我的 我想要來今年的對象 就是 就是來活動群",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 4
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1154.96,
+          "end": 1210.39,
+          "time": "第二段 19:14",
+          "partTime": "19:14",
+          "endTime": "20:10",
+          "text": "或者讓他們感受一下就是 我們這群就是這麼自然 也沒有讓 就是讓他 有想到 利益 利得利益的感覺 就是讓他有爽到 或者開心到 對啊 Cavin也是啊 對啊 或者我之前的AD 那個也是啊 只是後面有沒有轉成 真的是 付費的 就是來上課是 來上課是 最後一步就是 他想要 而且他踏出行動嘛 但是前面是 關心他啊 然後幫助他啊 說真的 如果這個人是你好朋友 有沒有 然後你帶他出去玩 玩個兩周 他就能脫單 你會叫他來上課嗎 你應該就帶他出去玩 就好了吧 對不對 你還覺得你幫他省錢了 對不對 然後他脫單了 你還覺得很開心 叫他請你吃麻辣火鍋這樣 然後 對啊 所以是你真的對他有足夠的認識 你覺得好",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 44
         }
       ]
     },
@@ -24021,6 +25520,190 @@
           "endTime": "24:46",
           "text": "OK"
         }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1210.39,
+          "end": 1297.53,
+          "time": "第二段 20:10",
+          "partTime": "20:10",
+          "endTime": "21:37",
+          "text": "UC幫他比我幫他還要好 對啊 不然你也可以幫他啊 OK 所以接下來就是你要去真的跟這些人聊 然後你聊你要是跟你們網聊一樣 就是兩個人的份量是一樣的 就是 我有問他問題 我也有分享我自己 不然你沒有分享 然後你會一直問他 他想說幹你要穿小 OK 好 所以你接下來這些人都要有新的進展喔 你把備注這邊都列一下時間 好不好 好不好 或者是列一個分格號之類的 知道 就是接下來這些人下一步是什麼 就是 不要把訊息刪掉重寫 你就一直往下寫 像是那個約會那樣子 OK 好 然後 楊楊 楊楊這兩個朋友是什麼 一個是 很久的朋友 就是 智剛他是 前年離婚 然後今年 有個 曖昧對象 然後後來又分了 對 對 這個很適合聊啊 有跟他聊 他目前就是 痾 上個月跟他聊 然後跟他聊 聊了之後 發現說 他現在覺得很累 不想談感情 因為他覺得 都沒有成效 然後 還有 還有說 他現在想找對象 是跟他有共同興趣 因為他之前的對象 都是沒有共同興趣 因為他之前的對象都是沒有共同興趣 他幾歲啊 跟你嗎",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 64
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1297.43,
+          "end": 1315.39,
+          "time": "第二段 21:37",
+          "partTime": "21:37",
+          "endTime": "21:55",
+          "text": "沒有 我記得33吧 還是32 我忘記了 他年輕欸 對阿 那這種 好 這種第一個是 會累的人呢 他是因為心累嗎 他不是不想要 他是心累 對 所以這種你就可以 先問他說好 那 因為有些人是 好我真的心很累",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 19
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1315.39,
+          "end": 1336.72,
+          "time": "第二段 21:55",
+          "partTime": "21:55",
+          "endTime": "22:16",
+          "text": "我現在臉 嘗試我也不想嘗試 他現在就是這種狀況 因為我有來找他 來參加我群組的活動 我辦的活動 他也完全不一樣 OK 好 那 如果是這個狀況 可能就是 在 過一陣子 在過一陣子 然後 另外一種情況 則是 OK 你心很累 是因為你覺得沒希望 那如果有希望 你會不會想做 這樣子",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 24
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1336.72,
+          "end": 1341.3,
+          "time": "第二段 22:16",
+          "partTime": "22:16",
+          "endTime": "22:21",
+          "text": "OK 就可以 就可以 這個就是他有疑慮嗎 我辦不到",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 5
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1341.3,
+          "end": 1343.3,
+          "time": "第二段 22:21",
+          "partTime": "22:21",
+          "endTime": "22:23",
+          "text": "那我不想要嗎 那如果",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 2
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1343.3,
+          "end": 1345.3,
+          "time": "第二段 22:23",
+          "partTime": "22:23",
+          "endTime": "22:25",
+          "text": "你可以去化解他的疑慮的話 說不定你有機會",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 2
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1345.3,
+          "end": 1349.67,
+          "time": "第二段 22:25",
+          "partTime": "22:25",
+          "endTime": "22:29",
+          "text": "OK 然後 那你要寫在那個 背注上面",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 4
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1349.67,
+          "end": 1379.24,
+          "time": "第二段 22:29",
+          "partTime": "22:29",
+          "endTime": "22:59",
+          "text": "我們才知道這個人的狀況 好 那那個Adee呢 Adee就是 之前我 有參加相親 然後 就是 換作聯姻 他是 我的 從彈子儀 對 就剛好 我們一排 工作 那我蠻好玩 然後咧 那你有關心他了嗎 有啊 有關心他 他目前還是單身 然後沒有 沒有聊很深 因為跟他沒有很熟 因為見過那一次沒有 那我覺得這個你可以直接邀請 直接邀請 直接邀請嗎",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 29
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1379.14,
+          "end": 1392.45,
+          "time": "第二段 22:59",
+          "partTime": "22:59",
+          "endTime": "23:12",
+          "text": "對 直接丟 丟遊戲連結 然後直接邀請 你還是用問的 你還是 就是你可以跟他說 欸那你現在 其實有沒有進展啊 沒有的話 我就好可不可以 你知道嗎 我有在上一堂課 我覺得蠻有幫助的 對",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 15
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1392.45,
+          "end": 1402.83,
+          "time": "第二段 23:12",
+          "partTime": "23:12",
+          "endTime": "23:22",
+          "text": "那只是你這邊可能你自己要 整理一下 你覺得你為什麼 有幫助 因為你目前還沒有脫單嘛 因為你目前還沒有脫單嘛 可是你有 當渣男嗎",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 8
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1402.83,
+          "end": 1415.12,
+          "time": "第二段 23:22",
+          "partTime": "23:22",
+          "endTime": "23:35",
+          "text": "對啊 只是你不要講成這樣啦 就是你 因為沒有脫單 你的說服力會比較 不明確 我知道 所以我這樣 沒有什麼方式好說服他",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 9
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1415.12,
+          "end": 1427.84,
+          "time": "第二段 23:35",
+          "partTime": "23:35",
+          "endTime": "23:47",
+          "text": "但是這個事情有點像這樣 就是假如說 我們今天都是癌症病友好了 然後 然後我們一起在同一張病床上 欸不是同一張病床 同一個病房裡 然後 嗯 我們都還沒痊癒",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 10
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1427.84,
+          "end": 1428.84,
+          "time": "第二段 23:47",
+          "partTime": "23:47",
+          "endTime": "23:48",
+          "text": "可是我跟你說 那個",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 2
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1428.84,
+          "end": 1486.18,
+          "time": "第二段 23:48",
+          "partTime": "23:48",
+          "endTime": "24:46",
+          "text": "我的醫生幫我換了一個新的藥 我覺得比較好 有比較好 有比較好 我雖然還沒有痊癒 但是 反正你也是準備等死嘛 那你要不要跟我一起換這個藥 大概這種感覺 這比喻不知道會不會很奇怪 就是你雖然沒有 完全的得到結果 但是你有在變好 對這也是能分享的 OK 因為還會有時間的問題 跟運氣的問題嘛 不是說 就是有的人 說不定就是 換了這個藥他也是死啊 這樣 這比喻好 你們能夠 言議會就好了 OK 那因為這個人跟你關係 比較沒有那麼多 你可以像他們一樣就是 再去認識他 再好好跟他 深聊 認識這個人 對 然後又或者是 那你也可以直接跟他分享 說 那你會不會有興趣 好 那這種情況底下 因為不熟 你就是可以跟他說 好我真的 我不會有記得利益 但是就是真心推薦 因為我對你這個人有印象 然後我知道你 我們都有一樣的需求這樣 對 OK",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 50
+        }
       ]
     },
     {
@@ -26150,6 +27833,138 @@
           "endTime": "28:55",
           "text": "我的實驗性"
         }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1486.18,
+          "end": 1502.8,
+          "time": "第二段 24:46",
+          "partTime": "24:46",
+          "endTime": "25:02",
+          "text": "好 所以這邊備注寫一下 然後 這個人要有下一步 沒有下一步 對 你們那個可觀性 就是医療了 就變成 就是医觀 可觀性医邀約 對還沒邀約 那就是這樣 好奇奇芒果",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 14
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1502.8,
+          "end": 1503.8,
+          "time": "第二段 25:02",
+          "partTime": "25:02",
+          "endTime": "25:03",
+          "text": "她是我一個",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 1
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1503.8,
+          "end": 1559.1,
+          "time": "第二段 25:03",
+          "partTime": "25:03",
+          "endTime": "25:59",
+          "text": "她就是介紹我去基歐女中邦 就是替代她 當聖河老師的一個朋友 然後她也是 她是一年多前剛分手的 對 可能 她在這方面會有需求 然後現在還是沒有交流 沒有交流 幾歲喔 嗯 反熟不熟 我寂了欸 胖胖的 不會胖 我問你熟不熟 你說熟不熟 聽錯 對對對 好 那這個的話就是 你們熟 對啊你們熟不熟 還算熟吧 那這個就可以直接講 就是 你 對我有恩吧 算是吧 就是你 聽哨我高中女生 然後 然後我知道你現在也單身啊 怎麼樣的啊 就是你這個有很充分的理由啊",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 36
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1559.1,
+          "end": 1563.76,
+          "time": "第二段 25:59",
+          "partTime": "25:59",
+          "endTime": "26:03",
+          "text": "對啊 你說就 直接蛋糕直入的問",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 3
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1563.76,
+          "end": 1653.19,
+          "time": "第二段 26:03",
+          "partTime": "26:03",
+          "endTime": "27:33",
+          "text": "這個我覺得是可以直接問的 然後 當然你也可以先關心啊 就是欸你現在還是單身嗎 然後 先講 然後就算 就是 先了解他感情的狀況嘛 然後再分享 再跟他說欸 那因為你之前對我不錯 所以我覺得我也有一個不錯的東西 對啊 這就是 蘋果啊 他對你好 你對他好 OK 那就去吧 來 Alex 對兩位 我快要聊另外一個人 喔 那他說 就是 跟另外一個人聊啊 然後他說 他現在覺得一個人 但我怕這可以試試 這種就是跟他那個人相 可能是 可能是他有疑慮 就是 我一個人很好 是因為我只能一個人 然後我覺得 要去努力 好累喔 還是我真的覺得一個人很好 但我要怎麼缺點 你就說欸 那如果可以找女朋友 或者是如果 就是今天 找女朋友 真正是你成功機率 可以提高到多少 或是你最厲害的 就是你現在分享你的故事 欸 我三個月約了15個女生 對啊 就說你用你的故事就好了 最 那最真實的 尤其是你現在 正在 經歷這個過程 你應該自己會很有心的 對啊 你就可以 瘋狂的跟你的朋友分享 對啊 所以 好 那你再更新一下 好 哇 很不錯喔 耶耶耶耶 你這樣從 今天聊到西 為什麼 我今天都跟腳踏在一起 好噁心喔",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 76
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1653.19,
+          "end": 1665.24,
+          "time": "第二段 27:33",
+          "partTime": "27:33",
+          "endTime": "27:45",
+          "text": "真的 好 那 那 今天 太多的路了 我超累的欸 今天他超多資金的路 對 真的 而且你今天本來",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 11
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1665.24,
+          "end": 1714.23,
+          "time": "第二段 27:45",
+          "partTime": "27:45",
+          "endTime": "28:34",
+          "text": "還沒有要幫我做那麼多事 來 來 來 好 我們 好 好啦 可以啦 趕快四分前五 最後末班結束這樣 我一直擔心這個 四分 十分 紅線最 這一版 四十分 十二點全 我是 至剛我是 呃 再過 一個月再去好好的 關於大感情的部分 還是 呃 喔 等一下喔 剛剛還有一個沒聊到的 就是要開發 呃 所以 你上次跟他聊是什麼時候 上個月 喔沒有 現在是 你可以問 好過一陣子你就可以問了 你就可以說 欸 我就是我 你上次那樣講 那 那是什麼意思 就是如果換個情境啊 什麼的 或你覺得 這樣你會有動力嗎",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 48
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1714.23,
+          "end": 1722.27,
+          "time": "第二段 28:34",
+          "partTime": "28:34",
+          "endTime": "28:42",
+          "text": "OK 然後 他如果問你為什麼要 就是這麼積極問他 你就說你最近 就是在上課啊 然後你想要幫助一些人",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 7
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1722.27,
+          "end": 1728.49,
+          "time": "第二段 28:42",
+          "partTime": "28:42",
+          "endTime": "28:48",
+          "text": "那如果他會懷疑你就澄清 你們就是沒拿錢嗎 你們真的沒拿錢 你們就是得到我的愛而已啊",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 4
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1728.49,
+          "end": 1735.79,
+          "time": "第二段 28:48",
+          "partTime": "28:48",
+          "endTime": "28:55",
+          "text": "對啊 這把我的愛傳出去 OK 好 希望這個 我在跟大家講 一件事就是 因為這個是 我的實驗性",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 9
+        }
       ]
     },
     {
@@ -26868,6 +28683,34 @@
           "partTime": "30:19",
           "endTime": "30:20",
           "text": "等我"
+        }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1735.79,
+          "end": 1815.19,
+          "time": "第二段 28:55",
+          "partTime": "28:55",
+          "endTime": "30:15",
+          "text": "群組嘛 然後 對我來說是業務 那對你們來說 希望是愛 然後 最好的情況 是我們這個東西 真的行得通 欸不要不要不要不要 我要吃了 最好是 我們這個東西真的行得通 然後 因為公司 我只吃一個就好 有人要我 公司有在 嘗試過這件事情 你知道嗎 嘗試過 就是讓學長這樣 去邀請別人這樣 然後這件版本 超爛 就是我們給錢大家都做不好 但是最近又死灰復燃 然後變成不給錢的版本 不給錢 壓榨你的實力跟能力 因為就是我開始在實驗 然後他們發現 這件事情好像用我的版本 是行得通日 好 我要幫他證明這件事情 對 但是我們不是要 讓UC變成有很多業務 就是只是真的 你身邊有 就是你真的 真正的朋友 然後你幫他一把這樣子 對 所以 如果我們可以從中摸索出一個 就是我真的能教你 關心你身邊的人 然後你也能夠 真的看到他改變 我們就可以創造台灣更多 就是有愛 有好男人這樣 OK 就是我們還是有一些願景的 還有讓小朋友 我原本想要分享 在彥晨那邊學到的東西 但你實際上有點想 我還蠻後期的 你講一下好不好 我覺得你不會講很久 好啊",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 64
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1815.19,
+          "end": 1820.5,
+          "time": "第二段 30:15",
+          "partTime": "30:15",
+          "endTime": "30:20",
+          "text": "那我三十秒放過 OK 要放嗎 我不要聽喔 等我",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 5
         }
       ]
     },
@@ -28483,6 +30326,164 @@
           "partTime": "34:24",
           "endTime": "34:25",
           "text": "第八第七"
+        }
+      ],
+      "speakerTurns": [
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1820.5,
+          "end": 1828.56,
+          "time": "第二段 30:20",
+          "partTime": "30:20",
+          "endTime": "30:28",
+          "text": "彥晨 那邊你學 對 因為我那個 因為我從彥晨身上有學到 有發現到我自己的一些缺點",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 6
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1828.56,
+          "end": 1845.08,
+          "time": "第二段 30:28",
+          "partTime": "30:28",
+          "endTime": "30:45",
+          "text": "然後我現在就是正在 往這一 這一邊去 去做缺繩 沒有意思 那可能是 不要跟我說是修圖了 是啦 跟攝影沒有關係",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 9
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1845.08,
+          "end": 1866.19,
+          "time": "第二段 30:45",
+          "partTime": "30:45",
+          "endTime": "31:06",
+          "text": "這可能是我缺乏的一塊拼圖 我是聲音 就 我是聲音 就 那個時候下去 海中跟彥晨聊的時候 我其實沒有很喜歡他這個人 是嗎 他的腳踏方式 怎麼講 他的腳踏方式太過強勢 然後他太過 從一張紙上去認識一個人",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 14
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1866.19,
+          "end": 1876.46,
+          "time": "第二段 31:06",
+          "partTime": "31:06",
+          "endTime": "31:16",
+          "text": "那我就不是很喜歡這種方式 對 我沒有不信這個東西 但是 我覺得 你把一個人 就是當成一張紙",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 7
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1876.46,
+          "end": 1883.71,
+          "time": "第二段 31:16",
+          "partTime": "31:16",
+          "endTime": "31:23",
+          "text": "他給我的感覺就是這個樣子 但anyway 反正 他的腳踏方式 讓我不是很喜歡",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 5
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1883.71,
+          "end": 1890.18,
+          "time": "第二段 31:23",
+          "partTime": "31:23",
+          "endTime": "31:30",
+          "text": "那我就會 開始去排斥這個人 開始不去對他 對他產生好奇心",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 4
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1890.18,
+          "end": 1892.18,
+          "time": "第二段 31:30",
+          "partTime": "31:30",
+          "endTime": "31:32",
+          "text": "或者說我不太會去關心他",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 1
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1892.18,
+          "end": 1900.49,
+          "time": "第二段 31:32",
+          "partTime": "31:32",
+          "endTime": "31:40",
+          "text": "但是我後來就是 那天都會回來撐團 我比較少跟他講 我就是跟 還有另外一個人 另外一個人 被釀在一邊",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 7
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1900.49,
+          "end": 1907.38,
+          "time": "第二段 31:40",
+          "partTime": "31:40",
+          "endTime": "31:47",
+          "text": "我是在跟另外一個人聊天 你說跟男生 你是不是沒有追到他的存在",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 3
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1907.38,
+          "end": 1922.83,
+          "time": "第二段 31:47",
+          "partTime": "31:47",
+          "endTime": "32:02",
+          "text": "不是 那是晚餐才出現好不好 他晚上才出現 對啊 那反正就是從這件事情 就是有發現這件事情 發現我的這個習性 所以我現在就是 開始在往這邊去修正 就是不管他這個人 我對這個人的觀感如何",
+          "speaker": "現場回應（推定）",
+          "speakerClass": "speaker-room",
+          "segmentCount": 11
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1922.83,
+          "end": 1999.77,
+          "time": "第二段 32:02",
+          "partTime": "32:02",
+          "endTime": "33:19",
+          "text": "但是我還是要一視同仁的 去 去關心 關心我身邊的各個 各個我遇到的人 這是我現在在修正的方向 對 因為這可能會是 怎麼講 有沒有打從心裡的 去去關心你周遭的人 去喜歡這件事情 總之我現在就是在修正的 因為以前 以前的話 我如果對這個人 不是那麼喜歡的話 那我就會完全失去對他的關係 原來是 對 那 感覺這件事情是不是 不是那麼好的 其實 其實我也是 一陣子之間 才需要負面的情緒 反而能告訴你說 你這個人 你這個人 到底是怎麼回事 你不喜歡一個人 其實 這個情緒 告訴更多 關於你的 訊息 那你看一下喔 如果雁城 進來 進來拖單群 我會全力的關心他 放他 OK 接受 那講開就好 好 然後",
+          "speaker": "學員（推定）",
+          "speakerClass": "speaker-student",
+          "segmentCount": 48
+        },
+        {
+          "part": "part2",
+          "partLabel": "第二段",
+          "start": 1999.77,
+          "end": 2065.31,
+          "time": "第二段 33:19",
+          "partTime": "33:19",
+          "endTime": "34:25",
+          "text": "今天有很多東西要更新嘛 然後 最後這邊的話 就是大家再列一下 有沒有想關心的名字 有沒有 就是你們兩個 大家都幾歲了 你不可能關心的人 只有一兩個 OK 一定還有 不然就是你疏於 好 你還有一個路徑 是你疏於去 跟你身邊的人相處 所以你可以 開始去跟一些以前的朋友 稍微相處一下 OK 你用成長版的你 再去看你過去的那些人 我跟你講那事也是不一樣 OK 好 辛苦大家 我會珍惜你們的 好不好 然後免疫休息 我相信六月應該會有再拖單 不要六月是那個 六月然後聖言又分手 七月聖言又交往 我們就變成什麼 每個月都在看自己的答案 就摩擾音音上 也是每個月都有人拖單 對 全主拖單應該是什麼 什麼刷數據嗎 刷籃版 第八第七",
+          "speaker": "小侯（推定）",
+          "speakerClass": "speaker-coach",
+          "segmentCount": 43
         }
       ]
     }
